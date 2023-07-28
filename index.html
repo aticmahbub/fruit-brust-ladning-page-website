@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="tailwind.config.js">
+
+
+    <!--Lato Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+
+
+</head>
+
+<body class="font-lato">
+    <header>
+        <nav class="flex justify-between bg-[#F85559] rounded-3xl items-center py-3 px-6">
+
+            <div>
+
+                <ul class="flex gap-2">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+
+                </ul>
+
+            </div>
+            <div class="flex">
+                <img src="images/logo.png" alt="">
+                <h2>Fruit Brust</h2>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+
+        </nav>>
+        <!--nav end-->
+
+        <div class="banner">
+
+            <div class="carousel w-full">
+                <!--Slider-1-->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!--Slider-2-->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!--Slider-3-->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!--Slider-4-->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Banner end-->
+
+    </header>
+
+    <main class="mx-auto">
+
+        <div
+            class="  max-h-60 max-w-3xl mx-auto py-12 px-16  flex gap-20 shadow-black relative bg-white bottom-20 rounded-lg">
+
+            <div class="fruits">
+                <img src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div class="fruits">
+                <img src="images/fruit2.png" alt="">
+                <p>Orange</p>
+            </div>
+            <div class="fruits">
+                <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+            <div class="fruits">
+                <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div class="fruits">
+                <img src="images/fruit5.png" alt="">
+                <p>Mango</p>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="deals-of-the-day">
+
+            <div class="flex justify-around">
+                <div>
+                    <h3>Deal of the day</h3>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:41;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+
+
+             </div>
+
+                <div class="max-h-96 max-w-xs p-12 items-center justify-center text-center">
+                    <img src="images/fruit6.png" alt="">
+                    <h4>
+                        12.90$-$18.85
+                    </h4 class>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <a href="">Details</a>
+                      
+        </div>
+                     
+            </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+</body>
+
+</html>
